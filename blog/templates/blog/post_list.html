@@ -1,21 +1,13 @@
-<html>
-<head>
-    <title>Sapphireon's blog</title>
-</head>
-<body>
-    <div>
-        <h1>Sapphireon's Declaration</h1>
-        <h2>About This Project</h2>
-        <p>I'm creating this blog because i'm learning different sides about programation, with Django Girls's Tutorial and my mentor called Laurinha. Thank you, everyone!</p>
-    </div>
-    <br>
+{% extends 'blog/base.html' %}
+
+{% block content %}
     {% for post in posts %}
-        <div>
-            <p><a href="/"> {{post.title}} </a></p>
+        <div class="post">
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
-            <h5>published: {{ post.published_date}}</h5>
-            <br>
+            <div class="date">
+                <p>published: {{ post.published_date }}</p>
+            </div>
         </div>
     {% endfor %}
-</body>
-</html>
+{% endblock %}
