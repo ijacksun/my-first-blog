@@ -3,9 +3,14 @@ h1 a, h2 a {
      font-family: 'Lobster';
 }
 
-h3 a, h4 p {
+h3  {
     font-family: 'Lobster', cursive;
-    color: #0b4170
+    color: #ffffff
+}
+
+h4  {
+    font-family: 'Arial', serif;
+    text-size: 11pt;
 }
 
 body {
