@@ -4,13 +4,8 @@ h1 a, h2 a {
 }
 
 h3  {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster';
     color: #ffffff
-}
-
-h4  {
-    font-family: 'Arial', serif;
-    text-size: 11pt;
 }
 
 body {
